@@ -1,5 +1,6 @@
 ﻿using ProgrammingConstructs.If_Else_Statement;
 using ProgrammingConstructs.IfElseIfStatements;
+using ProgrammingConstructs.SwitchCaseStatement;
 using System;
 
 namespace ProgrammingConstructs
@@ -11,7 +12,7 @@ namespace ProgrammingConstructs
             Console.WriteLine("Welcome to the Programming Constructs");
             Console.WriteLine("Choose the option");
             Console.WriteLine("1.Number is equal or not\n2.Check Even or Odd\n3.Age Check for vote\n4.Largest Number" +
-                "\n5.Admission Eligibility");
+                "\n5.Admission Eligibility\n6.WeekDays\n7.Arithmetic Operation");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,14 @@ namespace ProgrammingConstructs
                 case 5:
                     EligibilityAdmission admission = new EligibilityAdmission();
                     admission.Check_Eligible_Candidate();
+                    break;
+                case 6:
+                    WeekDays week = new WeekDays();
+                    week.Day_Check();
+                    break;
+                case 7:
+                    ArithmeticOperation operation = new ArithmeticOperation();
+                    operation.Check_Arithmetic_Operation();
                     break;
             }
         }
